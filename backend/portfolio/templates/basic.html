@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="h-min-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+
+<body class="bg-black/80 h-full w-full">
+    <canvas id="starfield" class="fixed top-0 left-0 w-screen h-min-screen -z-10"></canvas>
+    <script src="{% static 'js/starfield.js' %}"></script>
+    {% block body %}    {% endblock body %}
+
+    {% block script %}  {% endblock script %}
+
+    
+</body>
+
+</html>

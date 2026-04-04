@@ -1,0 +1,327 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block body %}
+<section class="relative h-screen w-full flex flex-col justify-center items-center text-center px-4">
+
+    <p class="text-white text-2xl sm:text-3xl md:text-6xl mb-2 animate-fadeIn">
+        Hi, I am
+    </p>
+    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold  glow mb-6 animate-fadeIn">
+        Suyash Kumar
+    </h1>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl text-gray-300 mb-10 animate-fadeIn delay-200">
+        A <span id="typed-text" class="text-cyan-400"></span><span class="blinking-cursor">|</span>
+    </h2>
+    <div class="flex pb-10 flex-row gap-10 justify-center">
+
+        <a href="#contact"
+            class="px-10 py-4 bg-cyan-500 text-white rounded-lg shadow-lg hover:bg-cyan-700 hover:shadow-xl transform transition hover:scale-105 animate-fadeIn delay-100">
+            Hire Me
+        </a>
+        <a href="{% static 'pdf/abc.pdf' %}" download
+            class="px-10 py-4 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transform transition hover:scale-105 animate-fadeIn delay-100">
+            Download Resume
+        </a>
+    </div>
+
+</section>
+
+<section id="about" class="relative w-full py-10 px-4 flex justify-center">
+    <div class="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
+
+        <div class="w-48 h-48 md:w-64 md:h-64 animate-fadeIn">
+            <img src="{% static 'images/profile.png' %}" alt="Suyask Kumar"
+                class="w-full h-full object-cover rounded-full shadow-lg transform transition duration-700 hover:scale-105 floating">
+        </div>
+
+        <div class="bg-black/70 p-6 md:p-10 rounded-xl flex-1 animate-fadeIn delay-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
+            <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+                Hi! I’m <span class="text-blue-400 font-semibold">Suyash Kumar</span>, an aspiring <span
+                    class="font-semibold">Fullstack Developer</span> with a passion for building clean, interactive, and
+                efficient web applications. I may not have professional experience yet, but I am a quick learner who
+                thrives on challenges and hands-on projects. I enjoy exploring modern technologies like <span
+                    class="font-semibold"> Python, Django, JavaScript, and Tailwind CSS</span> and continuously work on
+                improving my skills through self-driven projects. I believe in writing clean, maintainable code and
+                bringing creative ideas to life.
+            </p>
+
+            <div class="flex flex-wrap gap-6 mt-6">
+                <div class="text-center transform transition hover:-translate-y-2 hover:shadow-lg p-4 rounded-lg">
+                    <p class="text-2xl md:text-3xl font-bold text-white">5+</p>
+                    <p class="text-gray-400">Projects</p>
+                </div>
+                <div class="text-center transform transition hover:-translate-y-2 hover:shadow-lg p-4 rounded-lg">
+                    <p class="text-2xl md:text-3xl font-bold text-white">Love to start</p>
+                    <p class="text-gray-400">Years Experience</p>
+                </div>
+                <div class="text-center transform transition hover:-translate-y-2 hover:shadow-lg p-4 rounded-lg">
+                    <p class="text-2xl md:text-3xl font-bold text-white">200%+</p>
+                    <p class="text-gray-400">Enthusiasm</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="techstack" class="relative w-full py-20 px-4 flex justify-center">
+    <div class="max-w-6xl w-full">
+
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-12 text-center">
+            Tech Stack
+        </h2>
+
+
+        <div class="mb-12">
+            <h3 class="text-xl md:text-2xl text-blue-400 mb-6 font-semibold">Languages</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                    </div>
+                    <span>Python</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                    </div>
+                    <span>HTML</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                    </div>
+                    <span>CSS</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="text-xl md:text-2xl text-orange-400 mb-6 font-semibold">Frontend</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+                <div class="tech-card">
+                    <div class="flex gap-2 justify-center ">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            class="w-6 icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            class="w-6 icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            class="w-6 icon-box">
+                    </div>
+                    <span>Classic</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            class="w-10 h-10">
+                    </div>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
+                            class="w-10 h-10">
+                    </div>
+                    <span>Tailwind CSS</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="text-xl md:text-2xl text-green-400 mb-6 font-semibold">Backend</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://static.cdnlogo.com/logos/d/3/django.svg">
+                    </div>
+                    <span>Django</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://www.django-rest-framework.org/img/logo.png">
+                    </div>
+                    <span>DRF</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl md:text-2xl text-purple-400 mb-6 font-semibold">Tools</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg">
+                    </div>
+                    <span>Redis</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://static.cdnlogo.com/logos/g/15/git-icon.svg">
+                    </div>
+                    <span>Git</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                    </div>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+                    </div>
+                    <span>Docker</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box bg-white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Celery_logo.png"
+                            class="object-contain">
+                    </div>
+                    <span>Celery</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-box bg-white">
+                        <img src="https://static.cdnlogo.com/logos/p/20/postman.svg" class="object-contain">
+                    </div>
+                    <span>Postman</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="relative w-full py-20 px-4 flex justify-center">
+    <div class="max-w-6xl w-full">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+            Projects
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for project in projects %}
+            <div class="project-card group">
+                <a href="{% url 'project_detail' project.slug %}">
+
+                    <img src="{{ project.thumbnail.url }}" alt="{{ project.title }}"
+                        class="rounded-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-4 mt-2">
+                        <h3 class="text-xl font-semibold text-white mb-2">{{ project.title }}</h3>
+                        <p class="text-gray-300 text-sm truncate mb-4">{{ project.short_description }}</p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            {% for tech in project.tech_stack.all %}
+                            <div
+                                class="bg-white/10 text-white text-xs font-semibold px-2 py-1 rounded flex items-center gap-1 hover:bg-white/20 transition">
+                                {% if tech.icon_svg %}
+                                <img src="{{ tech.icon_svg|safe }}" class="w-4 h-4" alt="">
+                                {% endif %}
+                                <span>{{ tech.name }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="flex gap-4 z-20  relative">
+                            {% if project.github_url %}
+                            <a href="{{ project.github_url }}" target="_blank"
+                                class="px-4 py-2 flex items-center gap-2 bg-blue-500 text-white rounded transform transition duration-300 hover:scale-105">
+                                <img class="w-7 h-7"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="">GitHub
+                            </a>
+                            {% endif %}
+
+                            {% if project.live_url %}
+                            <a href="{{ project.live_url }}" target="_blank"
+                                class="px-4 py-2 bg-green-500 text-white rounded transform transition duration-300 hover:scale-105">
+                                Live Demo
+                            </a>
+                            {% else %}
+                            <span
+                                class="px-4 py-2 bg-red-600 text-white rounded cursor-not-allowed transform transition duration-300 inline-flex items-center justify-center">
+                                Inactive
+                            </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="qualifications" class="relative w-full py-20 px-4 ">
+    <div class="container mx-auto px-4">
+        <h1 class="font-bold text-white text-center text-6xl mb-12">Education & Qualifications</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="tech-card  rounded-xl p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class=" text-2xl font-semibold mb-2">Class 12th CBSE Board</h3>
+                    <p class="mb-2 text-3xl">97%</p>
+                    <p class=" text-sm">Computer Science: 99 Marks</p>
+                </div>
+
+                <div class="tech-card rounded-xl p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-3xl font-semibold mb-2">JEE Mains</h3>
+                    <p class=" mb-2 text-3xl">98.7 percentile</p>
+                </div>
+
+                <div class=" tech-card rounded-xl p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">Coding</h3>
+                    <p class=" mb-2 text-2xl">Self taught (sources) </p>
+                    <p class="text-2xl">Books, videos and tools.</p>
+                </div>
+
+            </div>
+    </div>
+</section>
+
+<section id="contact" class="relative w-full py-16  flex flex-col items-center text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 animate-fadeIn">
+        Want to reach me?
+    </h2>
+    <a href="mailto:suyash1008kumar@gmail.com"
+        class="mt-4 px-8 py-4 bg-green-400 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform transition hover:scale-105  hover:bg-green-700 flex items-center gap-3 animate-fadeIn delay-10">
+        suyash1008kumar@gmail.com
+    </a>
+    <p class="text-white/80 mt-4 text-lg md:text-xl">I’ll get back to you as soon as possible!</p>
+</section>
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'js/typewriter.js' %}"></script>
+{% endblock %}
