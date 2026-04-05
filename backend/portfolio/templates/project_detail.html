@@ -6,10 +6,10 @@
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         <div class="flex-1">
             {% if project.banner %}
-            <img src="{{ project.banner.url }}" alt="{{ project.title }}"
+            <img src="{% static 'images/projects/banners/'|add:project.slug|add:'.png' %}" alt="{{ project.title }}"
                 class="rounded-xl shadow-2xl object-cover w-full h-96  transition-transform duration-500 hover:scale-105">
             {% else %}
-            <img src="{{ project.thumbnail.url }}" alt="{{ project.title }}"
+            <img src="{% static 'images/projects/thumbnail/'|add:project.slug|add:'.png' %}" alt="{{ project.title }}"
                 class="rounded-xl shadow-2xl object-cover w-full h-96  transition-transform duration-500 hover:scale-105">
             {% endif %}
         </div>
@@ -105,8 +105,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {% for img in project.gallery.all %}
             <div class="group relative cursor-pointer">
-                <a href="{{ img.image.url }}" target="_blank">
-                    <img src="{{ img.image.url }}" alt="{{ img.alt_text }}"
+                <a href="{% static 'images/projects/thumbnail/'|add:img.alt_text|add:'.png' %}"target="_blank">
+                    <img src="{% static 'images/projects/thumbnail/'|add:img.alt_text|add:'.png' %}" alt="{{ img.alt_text }}"
                         class="rounded-xl w-full h-64 object-fill transition-transform duration-300 group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex justify-center items-center text-white text-lg font-semibold rounded-xl">
